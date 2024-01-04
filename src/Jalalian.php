@@ -169,7 +169,7 @@ class Jalalian
     {
         return new static(
             $this->getYear(),
-            ($this->getQuarter() - 1) * Carbon::MONTHS_PER_QUARTER,
+            ($this->getQuarter() - 1) * Carbon::MONTHS_PER_QUARTER + 1,
             1,
             $this->getHour(),
             $this->getMinute(),
@@ -180,7 +180,7 @@ class Jalalian
 
     public function getEndDayOfWeek(): Jalalian
     {
-        $endWeek = $this->subDays(6 - $this->getDayOfWeek());
+        $endWeek = $this->addDays(6 - $this->getDayOfWeek());
 
         return (new static(
             $endWeek->getYear(),
@@ -211,7 +211,7 @@ class Jalalian
         return new static(
             $this->getYear(),
             12,
-            $this->getDaysOf($this->getMonth()),
+            $this->getDaysOf(12),
             $this->getHour(),
             $this->getMinute(),
             $this->getSecond(),
