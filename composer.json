@@ -19,8 +19,8 @@
         "beberlei/assert": "3.*"
     },
     "require-dev" : {
-        "phpunit/phpunit": "~4.0"
-    },  
+        "phpunit/phpunit": ">4.0"
+    },
     "autoload": {
         "psr-4": {
             "Morilog\\Jalali\\": "src"
