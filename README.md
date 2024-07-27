@@ -421,8 +421,8 @@ $date = (new Jalalian(1397, 6, 24))->getEndDayOfYear()
 ```php
 public function getEndDayOfMonth(): bool
 
-$date = (new Jalalian(1397, 6, 24))->getEndDayOfYear()
-// output: 1397, 6, 30
+$date = (new Jalalian(1397, 6, 24))->getEndDayOfMonth()
+// output: 1397, 6, 31
 
 ```
 ---
@@ -592,7 +592,7 @@ $date = (new Jalalian(1397, 5, 24))->getDayOfYear()
 ---
 ```php
 public function toString(): string
-$date = (new Jalalian(1397, 5, 24))->isPast()
+$date = (new Jalalian(1397, 5, 24))->toString()
 // output: 1397-05-24 00:00:00
 
 ```
