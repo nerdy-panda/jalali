@@ -3,7 +3,7 @@
 namespace Morilog\Jalali;
 
 use Carbon\Exceptions\UnitException;
-use Date;
+use Carbon\Traits\Date;
 
 /**
  * Trait Converter.
